@@ -32,7 +32,9 @@
 							"Caption": "User Info",
 							"Value": "Loading user info…",
 							"PlaceHolder": "User info will appear here",
-							"IsEditable": false
+							"IsEditable": false,
+							"MinNumberOfLines": 24,
+							"MaxNumberOfLines": 0
 						}
 					]
 				}
