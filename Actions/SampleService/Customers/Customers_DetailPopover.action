@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add SalesOrderHeader",
+            "OnPress": "/crud_demo_3/Actions/SampleService/Customers/NavToCustomers_CreateSalesOrderHeader.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/crud_demo_3/Rules/SampleService/Customers/Customers_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

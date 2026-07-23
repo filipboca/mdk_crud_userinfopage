@@ -1,0 +1,124 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/crud_demo_3/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/crud_demo_3/Actions/SampleService/SalesOrderHeaders/SalesOrderHeaders_CheckRequiredFields_CreateSalesOrderItem.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_SalesOrderItem)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Currency Code",
+							"_Name": "CurrencyCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Date",
+							"_Name": "DeliveryDate",
+							"Caption": "Delivery Date",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "Gross Amount",
+							"KeyboardType": "Number",
+							"_Name": "GrossAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Item Number",
+							"KeyboardType": "Number",
+							"_Name": "ItemNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Net Amount",
+							"KeyboardType": "Number",
+							"_Name": "NetAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Product ID",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{Name}",
+								"ReturnValue": "{ProductID}",
+								"Target": {
+									"EntitySet": "Products",
+									"Service": "/crud_demo_3/Services/SampleService.service"
+								}
+							},
+							"_Name": "ProductID",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Quantity",
+							"KeyboardType": "Number",
+							"_Name": "Quantity",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Quantity Unit",
+							"_Name": "QuantityUnit",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sales Order ID",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{SalesOrderID}",
+								"ReturnValue": "{SalesOrderID}",
+								"Target": {
+									"EntitySet": "SalesOrderHeaders",
+									"Service": "/crud_demo_3/Services/SampleService.service"
+								}
+							},
+							"_Name": "SalesOrderID",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"Value": "{SalesOrderID}",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Tax Amount",
+							"KeyboardType": "Number",
+							"_Name": "TaxAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_CreateSalesOrderItem"
+}

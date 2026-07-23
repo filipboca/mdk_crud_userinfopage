@@ -1,0 +1,6 @@
+{
+    "OnFailure": "/crud_demo_3/Actions/RequiredFieldsFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/SampleService/Stock/Stock_CreateEntity.action",
+    "RequiredFields": ["ProductID", "QuantityLessMin"],
+    "_Type": "Action.Type.CheckRequiredFields"
+}

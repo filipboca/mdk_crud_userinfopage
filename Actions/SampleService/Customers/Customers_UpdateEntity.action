@@ -1,0 +1,27 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Customers",
+        "Service": "/crud_demo_3/Services/SampleService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "City": "#Page:Customers_Edit/#Control:City/#Value",
+        "Country": "#Page:Customers_Edit/#Control:Country/#Value",
+        "CustomerID": "#Page:Customers_Edit/#Control:CustomerID/#Value",
+        "DateOfBirth": "#Page:Customers_Edit/#Control:DateOfBirth/#Value",
+        "EmailAddress": "#Page:Customers_Edit/#Control:EmailAddress/#Value",
+        "FirstName": "#Page:Customers_Edit/#Control:FirstName/#Value",
+        "HouseNumber": "#Page:Customers_Edit/#Control:HouseNumber/#Value",
+        "LastName": "#Page:Customers_Edit/#Control:LastName/#Value",
+        "PhoneNumber": "#Page:Customers_Edit/#Control:PhoneNumber/#Value",
+        "PostalCode": "#Page:Customers_Edit/#Control:PostalCode/#Value",
+        "Street": "#Page:Customers_Edit/#Control:Street/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/crud_demo_3/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/crud_demo_3/Actions/UpdateEntityFailureMessage.action"
+}

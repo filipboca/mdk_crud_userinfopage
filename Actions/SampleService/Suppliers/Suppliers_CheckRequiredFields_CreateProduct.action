@@ -1,0 +1,6 @@
+{
+    "OnFailure": "/crud_demo_3/Actions/RequiredFieldsFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/SampleService/Suppliers/Suppliers_CreateProduct.action",
+    "RequiredFields": ["Name", "ProductID", "SupplierID"],
+    "_Type": "Action.Type.CheckRequiredFields"
+}

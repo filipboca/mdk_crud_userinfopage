@@ -1,0 +1,81 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/crud_demo_3/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/crud_demo_3/Actions/SampleService/Stock/Stock_CheckRequiredFields_Create.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_Stock_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Lot Size",
+							"KeyboardType": "Number",
+							"_Name": "LotSize",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Min Stock",
+							"KeyboardType": "Number",
+							"_Name": "MinStock",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Product ID",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{Name}",
+								"ReturnValue": "{ProductID}",
+								"Target": {
+									"EntitySet": "Products",
+									"Service": "/crud_demo_3/Services/SampleService.service"
+								}
+							},
+							"_Name": "ProductID",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Quantity",
+							"KeyboardType": "Number",
+							"_Name": "Quantity",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "QuantityLessMin",
+							"Caption": "Quantity Less Min",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch",
+							"RequiredIndicator": true
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Stock_Create"
+}

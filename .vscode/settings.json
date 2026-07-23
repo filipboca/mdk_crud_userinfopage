@@ -1,0 +1,8 @@
+{
+  "css.customData": [
+    "./.vscode/my-less.css-data.json"
+  ],
+  "mdk.uieditor": {
+    "device": "phone"
+  }
+}

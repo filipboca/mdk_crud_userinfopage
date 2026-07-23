@@ -1,0 +1,22 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "ProductTexts",
+        "Service": "/crud_demo_3/Services/SampleService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "ID": "#Page:ProductTexts_Edit/#Control:ID/#Value",
+        "Language": "#Page:ProductTexts_Edit/#Control:Language/#Value",
+        "LongDescription": "#Page:ProductTexts_Edit/#Control:LongDescription/#Value",
+        "Name": "#Page:ProductTexts_Edit/#Control:Name/#Value",
+        "ProductID": "#Page:ProductTexts_Edit/#Control:ProductID/#Value",
+        "ShortDescription": "#Page:ProductTexts_Edit/#Control:ShortDescription/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/crud_demo_3/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/crud_demo_3/Actions/UpdateEntityFailureMessage.action"
+}

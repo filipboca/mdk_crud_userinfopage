@@ -1,0 +1,10 @@
+{
+	"Application": "/Users/filip/Documents/crud_demo_3/Application.app",
+	"Target": "Mobile Services",
+	"OtherApps": [
+		{
+			"Application": "/Users/filip/Documents/crud_demo_3/Application.app",
+			"Target": "Mobile Services"
+		}
+	]
+}

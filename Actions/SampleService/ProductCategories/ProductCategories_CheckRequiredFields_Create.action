@@ -1,0 +1,6 @@
+{
+    "OnFailure": "/crud_demo_3/Actions/RequiredFieldsFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/SampleService/ProductCategories/ProductCategories_CreateEntity.action",
+    "RequiredFields": ["Category"],
+    "_Type": "Action.Type.CheckRequiredFields"
+}

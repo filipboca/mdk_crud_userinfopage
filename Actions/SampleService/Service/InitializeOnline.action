@@ -1,0 +1,10 @@
+{
+    "Service": "/crud_demo_3/Services/SampleService.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/crud_demo_3/Actions/SampleService/Service/InitializeOnlineFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/SampleService/Service/InitializeOnlineSuccessMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

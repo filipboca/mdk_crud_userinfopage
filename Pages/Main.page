@@ -1,0 +1,207 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable_SampleService",
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionHeader_SampleService",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Demo App"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton10",
+							"Title": "User Info Page",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/Application/NavToUserInfo.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton0",
+							"Title": "Customers",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/Customers/NavToCustomers_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton1",
+							"Title": "Product Categories",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/ProductCategories/NavToProductCategories_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton2",
+							"Title": "Products",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/Products/NavToProducts_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton3",
+							"Title": "Product Texts",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/ProductTexts/NavToProductTexts_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton4",
+							"Title": "Purchase Order Headers",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton5",
+							"Title": "Purchase Order Items",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/PurchaseOrderItems/NavToPurchaseOrderItems_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton6",
+							"Title": "Sales Order Headers",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/SalesOrderHeaders/NavToSalesOrderHeaders_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton7",
+							"Title": "Sales Order Items",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/SalesOrderItems/NavToSalesOrderItems_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton8",
+							"Title": "Stock",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/Stock/NavToStock_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton9",
+							"Title": "Suppliers",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/SampleService/Suppliers/NavToSuppliers_List.action"
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "App",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Width": 18,
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/crud_demo_3/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Main",
+		"PreferredCaptionSize": "Large"
+	}
+}

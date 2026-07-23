@@ -1,0 +1,125 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "Customers",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/crud_demo_3/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/crud_demo_3/Actions/SampleService/Customers/Customers_CheckRequiredFields_Edit.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_Customer_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "City",
+							"_Name": "City",
+							"Value": "{City}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Country",
+							"_Name": "Country",
+							"Value": "{Country}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Customer ID",
+							"_Name": "CustomerID",
+							"Value": "{CustomerID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Mode": "Date",
+							"_Name": "DateOfBirth",
+							"Value": "{DateOfBirth}",
+							"Caption": "Date Of Birth",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Email Address",
+							"_Name": "EmailAddress",
+							"Value": "{EmailAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Gender",
+							"_Name": "Gender",
+							"Value": "{Gender}",
+							"Segments": [
+								"Male",
+								"Female",
+								"Other",
+								"None",
+								"Unknown"
+							],
+							"_Type": "Control.Type.FormCell.SegmentedControl"
+						},
+						{
+							"Caption": "First Name",
+							"_Name": "FirstName",
+							"Value": "{FirstName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "House Number",
+							"_Name": "HouseNumber",
+							"Value": "{HouseNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Last Name",
+							"_Name": "LastName",
+							"Value": "{LastName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Phone Number",
+							"_Name": "PhoneNumber",
+							"Value": "{PhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Postal Code",
+							"_Name": "PostalCode",
+							"Value": "{PostalCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Street",
+							"_Name": "Street",
+							"Value": "{Street}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_Edit"
+}

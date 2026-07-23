@@ -1,0 +1,81 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "ProductTexts",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/crud_demo_3/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/crud_demo_3/Actions/SampleService/ProductTexts/ProductTexts_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_ProductText_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "ID",
+							"_Name": "ID",
+							"Value": "{ID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "Language",
+							"_Name": "Language",
+							"Value": "{Language}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Long Description",
+							"_Name": "LongDescription",
+							"Value": "{LongDescription}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Name",
+							"_Name": "Name",
+							"Value": "{Name}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Product ID",
+							"_Name": "ProductID",
+							"Value": "{ProductID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Short Description",
+							"_Name": "ShortDescription",
+							"Value": "{ShortDescription}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductTexts_Edit"
+}

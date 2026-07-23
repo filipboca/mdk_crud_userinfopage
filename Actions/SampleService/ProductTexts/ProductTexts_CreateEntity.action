@@ -1,0 +1,21 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/crud_demo_3/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "ID": "#Page:ProductTexts_Create/#Control:ID/#Value",
+        "Language": "#Page:ProductTexts_Create/#Control:Language/#Value",
+        "LongDescription": "#Page:ProductTexts_Create/#Control:LongDescription/#Value",
+        "Name": "#Page:ProductTexts_Create/#Control:Name/#Value",
+        "ProductID": "#Page:ProductTexts_Create/#Control:ProductID/#Value",
+        "ShortDescription": "#Page:ProductTexts_Create/#Control:ShortDescription/#Value"
+    },
+    "Target": {
+        "EntitySet": "ProductTexts",
+        "Service": "/crud_demo_3/Services/SampleService.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

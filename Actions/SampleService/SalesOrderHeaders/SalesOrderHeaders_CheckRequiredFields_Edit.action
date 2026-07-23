@@ -1,0 +1,6 @@
+{
+    "OnFailure": "/crud_demo_3/Actions/RequiredFieldsFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/SampleService/SalesOrderHeaders/SalesOrderHeaders_UpdateEntity.action",
+    "RequiredFields": ["LifeCycleStatus", "LifeCycleStatusName"],
+    "_Type": "Action.Type.CheckRequiredFields"
+}

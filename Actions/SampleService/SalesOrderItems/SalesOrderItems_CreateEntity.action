@@ -1,0 +1,25 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/crud_demo_3/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CurrencyCode": "#Page:SalesOrderItems_Create/#Control:CurrencyCode/#Value",
+        "DeliveryDate": "#Page:SalesOrderItems_Create/#Control:DeliveryDate/#Value",
+        "GrossAmount": "#Page:SalesOrderItems_Create/#Control:GrossAmount/#Value",
+        "ItemNumber": "#Page:SalesOrderItems_Create/#Control:ItemNumber/#Value",
+        "NetAmount": "#Page:SalesOrderItems_Create/#Control:NetAmount/#Value",
+        "ProductID": "#Page:SalesOrderItems_Create/#Control:ProductID/#SelectedValue",
+        "Quantity": "#Page:SalesOrderItems_Create/#Control:Quantity/#Value",
+        "QuantityUnit": "#Page:SalesOrderItems_Create/#Control:QuantityUnit/#Value",
+        "SalesOrderID": "#Page:SalesOrderItems_Create/#Control:SalesOrderID/#SelectedValue",
+        "TaxAmount": "#Page:SalesOrderItems_Create/#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "SalesOrderItems",
+        "Service": "/crud_demo_3/Services/SampleService.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

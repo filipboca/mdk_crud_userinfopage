@@ -1,0 +1,21 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/crud_demo_3/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CurrencyCode": "#Page:PurchaseOrderHeaders_Create/#Control:CurrencyCode/#Value",
+        "GrossAmount": "#Page:PurchaseOrderHeaders_Create/#Control:GrossAmount/#Value",
+        "NetAmount": "#Page:PurchaseOrderHeaders_Create/#Control:NetAmount/#Value",
+        "PurchaseOrderID": "#Page:PurchaseOrderHeaders_Create/#Control:PurchaseOrderID/#Value",
+        "SupplierID": "#Page:PurchaseOrderHeaders_Create/#Control:SupplierID/#SelectedValue",
+        "TaxAmount": "#Page:PurchaseOrderHeaders_Create/#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "PurchaseOrderHeaders",
+        "Service": "/crud_demo_3/Services/SampleService.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

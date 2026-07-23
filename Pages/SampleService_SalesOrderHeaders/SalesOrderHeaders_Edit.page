@@ -1,0 +1,116 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "SalesOrderHeaders",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/crud_demo_3/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/crud_demo_3/Actions/SampleService/SalesOrderHeaders/SalesOrderHeaders_CheckRequiredFields_Edit.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_SalesOrderHeader_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Mode": "Datetime",
+							"_Name": "CreatedAt",
+							"Value": "{CreatedAt}",
+							"Caption": "Created At",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "Currency Code",
+							"_Name": "CurrencyCode",
+							"Value": "{CurrencyCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Customer ID",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{CustomerID}",
+								"ReturnValue": "{CustomerID}",
+								"Target": {
+									"EntitySet": "Customers",
+									"Service": "/crud_demo_3/Services/SampleService.service"
+								}
+							},
+							"Value": "{CustomerID}",
+							"_Name": "CustomerID",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Gross Amount",
+							"_Name": "GrossAmount",
+							"Value": "{GrossAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Life Cycle Status",
+							"_Name": "LifeCycleStatus",
+							"Value": "{LifeCycleStatus}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Life Cycle Status Name",
+							"_Name": "LifeCycleStatusName",
+							"Value": "{LifeCycleStatusName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Net Amount",
+							"_Name": "NetAmount",
+							"Value": "{NetAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sales Order ID",
+							"_Name": "SalesOrderID",
+							"Value": "{SalesOrderID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "Tax Amount",
+							"_Name": "TaxAmount",
+							"Value": "{TaxAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Edit"
+}

@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add PurchaseOrderItem",
+            "OnPress": "/crud_demo_3/Actions/SampleService/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_CreatePurchaseOrderItem.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/crud_demo_3/Rules/SampleService/PurchaseOrderHeaders/PurchaseOrderHeaders_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

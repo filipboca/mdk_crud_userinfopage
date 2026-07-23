@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "ProductTexts",
+        "Service": "/crud_demo_3/Services/SampleService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/crud_demo_3/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/crud_demo_3/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

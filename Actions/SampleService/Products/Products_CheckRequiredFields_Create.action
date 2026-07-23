@@ -1,0 +1,6 @@
+{
+    "OnFailure": "/crud_demo_3/Actions/RequiredFieldsFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Rules/SampleService/Products/Products_CreateEntity.js",
+    "RequiredFields": ["Name", "ProductID", "SupplierID"],
+    "_Type": "Action.Type.CheckRequiredFields"
+}

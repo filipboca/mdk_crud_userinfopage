@@ -1,0 +1,222 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "Products",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/crud_demo_3/Actions/SampleService/Products/NavToProducts_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/crud_demo_3/Actions/SampleService/Products/Products_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Product_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "/crud_demo_3/Services/SampleService.service/{@odata.readLink}/Picture",
+						"HeadlineText": "{Name}",
+						"Subhead": "{Category}",
+						"BodyText": "",
+						"Footnote": "{CurrencyCode}",
+						"Description": "{CategoryName}",
+						"StatusText": "{DimensionDepth}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{DimensionHeight}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Category",
+							"Value": "{Category}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Category Name",
+							"Value": "{CategoryName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Currency Code",
+							"Value": "{CurrencyCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Dimension Depth",
+							"Value": "{DimensionDepth}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Dimension Height",
+							"Value": "{DimensionHeight}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Dimension Unit",
+							"Value": "{DimensionUnit}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Dimension Width",
+							"Value": "{DimensionWidth}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Long Description",
+							"Value": "{LongDescription}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Name",
+							"Value": "{Name}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Picture Url",
+							"Value": "{PictureUrl}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Price",
+							"Value": "{Price}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Product ID",
+							"Value": "{ProductID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Quantity Unit",
+							"Value": "{QuantityUnit}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Short Description",
+							"Value": "{ShortDescription}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Supplier ID",
+							"Value": "{SupplierID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Weight",
+							"Value": "{Weight}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Weight Unit",
+							"Value": "{WeightUnit}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "PurchaseOrderItems",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{GrossAmount}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{ItemNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{NetAmount}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{PurchaseOrderID}",
+						"OnPress": "/crud_demo_3/Actions/SampleService/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/PurchaseOrderItems",
+						"Service": "/crud_demo_3/Services/SampleService.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "SalesOrderItems",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DeliveryDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{GrossAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ItemNumber}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{NetAmount}",
+						"OnPress": "/crud_demo_3/Actions/SampleService/SalesOrderItems/NavToSalesOrderItems_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/SalesOrderItems",
+						"Service": "/crud_demo_3/Services/SampleService.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"PurchaseOrderItems",
+				"SalesOrderItems"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_Detail"
+}

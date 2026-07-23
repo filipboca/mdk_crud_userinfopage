@@ -1,0 +1,87 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "Stock",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/crud_demo_3/Actions/SampleService/Stock/NavToStock_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/crud_demo_3/Rules/SampleService/Stock/Stock_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Stock_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{ProductID}",
+						"Subhead": "{LotSize}",
+						"BodyText": "",
+						"Footnote": "{Quantity}",
+						"Description": "{MinStock}",
+						"StatusText": "{QuantityLessMin}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Lot Size",
+							"Value": "{LotSize}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Min Stock",
+							"Value": "{MinStock}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Product ID",
+							"Value": "{ProductID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Quantity",
+							"Value": "{Quantity}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Quantity Less Min",
+							"Value": "{QuantityLessMin}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Stock_Detail"
+}

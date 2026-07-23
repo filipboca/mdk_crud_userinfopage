@@ -1,0 +1,62 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "UserInfoHeader",
+						"Caption": "Authenticated user (raw JSON)",
+						"AccessoryType": "None",
+						"UseTopPadding": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "RefreshButton",
+							"Title": "Refresh user info",
+							"OnPress": "/crud_demo_3/Rules/GetUserInfo.js"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "UserInfoNote",
+							"Caption": "User Info",
+							"Value": "Loading user info…",
+							"PlaceHolder": "User info will appear here",
+							"IsEditable": false
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "User_Info",
+	"OnLoaded": "/crud_demo_3/Rules/GetUserInfo.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Back",
+				"Width": 18,
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/crud_demo_3/Actions/ClosePage.action"
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "User Info"
+	}
+}

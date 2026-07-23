@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/crud_demo_3/Pages/SampleService_Stock/Stock_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

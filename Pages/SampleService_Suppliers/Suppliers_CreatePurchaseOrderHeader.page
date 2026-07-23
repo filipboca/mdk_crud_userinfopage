@@ -1,0 +1,87 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/crud_demo_3/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/crud_demo_3/Actions/SampleService/Suppliers/Suppliers_CheckRequiredFields_CreatePurchaseOrderHeader.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_PurchaseOrderHeader)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Currency Code",
+							"_Name": "CurrencyCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Gross Amount",
+							"KeyboardType": "Number",
+							"_Name": "GrossAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Net Amount",
+							"KeyboardType": "Number",
+							"_Name": "NetAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Purchase Order ID",
+							"KeyboardType": "Number",
+							"_Name": "PurchaseOrderID",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Supplier ID",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{SupplierName}",
+								"ReturnValue": "{SupplierID}",
+								"Target": {
+									"EntitySet": "Suppliers",
+									"Service": "/crud_demo_3/Services/SampleService.service"
+								}
+							},
+							"_Name": "SupplierID",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"Value": "{SupplierID}",
+							"RequiredIndicator": true
+						},
+						{
+							"Caption": "Tax Amount",
+							"KeyboardType": "Number",
+							"_Name": "TaxAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Suppliers_CreatePurchaseOrderHeader"
+}

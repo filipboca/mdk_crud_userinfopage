@@ -1,0 +1,39 @@
+{
+    "PopoverItems": [{
+            "Enabled": true,
+            "Icon": "sap-icon://headset",
+            "OnPress": "/crud_demo_3/Actions/Application/NavToSupport.action",
+            "Title": "$(L,Action_Menu_Support)",
+            "Visible": true
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://refresh",
+            "OnPress": "/crud_demo_3/Actions/Application/AppUpdateProgressBanner.action",
+            "Title": "$(L,Action_Menu_Check_Updates)",
+            "Visible": "$(PLT,true,true,false)"
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://hint",
+            "OnPress": "/crud_demo_3/Actions/Application/NavToAbout.action",
+            "Title": "$(L,Action_Menu_About)",
+            "Visible": true
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://reset",
+            "OnPress": "/crud_demo_3/Actions/Application/ResetMessage.action",
+            "Title": "$(L,Action_Menu_Reset)",
+            "Visible": true
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://log",
+            "OnPress": "/crud_demo_3/Actions/Application/Logout.action",
+            "Title": "$(L,Action_Menu_Logout)",
+            "Visible": "/crud_demo_3/Rules/Application/ClientIsMultiUserMode.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

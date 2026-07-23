@@ -1,0 +1,6 @@
+{
+    "OnFailure": "/crud_demo_3/Actions/RequiredFieldsFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/SampleService/PurchaseOrderItems/PurchaseOrderItems_CreateEntity.action",
+    "RequiredFields": ["ItemNumber", "ProductID", "PurchaseOrderID", "Quantity"],
+    "_Type": "Action.Type.CheckRequiredFields"
+}

@@ -1,0 +1,4 @@
+{
+    "_Type": "Action.Type.Navigation",
+    "PageToOpen": "/crud_demo_3/Pages/SampleService_PurchaseOrderHeaders/PurchaseOrderHeaders_List.page"
+}

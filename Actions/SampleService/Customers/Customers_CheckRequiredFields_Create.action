@@ -1,0 +1,6 @@
+{
+    "OnFailure": "/crud_demo_3/Actions/RequiredFieldsFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/SampleService/Customers/Customers_CreateEntity.action",
+    "RequiredFields": ["CustomerID", "DateOfBirth"],
+    "_Type": "Action.Type.CheckRequiredFields"
+}

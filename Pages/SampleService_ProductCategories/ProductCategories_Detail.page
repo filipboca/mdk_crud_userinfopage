@@ -1,0 +1,87 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "ProductCategories",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/crud_demo_3/Actions/SampleService/ProductCategories/NavToProductCategories_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/crud_demo_3/Rules/SampleService/ProductCategories/ProductCategories_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,ProductCategory_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{CategoryName}",
+						"Subhead": "{Category}",
+						"BodyText": "",
+						"Footnote": "{MainCategoryName}",
+						"Description": "{MainCategory}",
+						"StatusText": "{NumberOfProducts}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Category",
+							"Value": "{Category}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Category Name",
+							"Value": "{CategoryName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Main Category",
+							"Value": "{MainCategory}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Main Category Name",
+							"Value": "{MainCategoryName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Number Of Products",
+							"Value": "{NumberOfProducts}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductCategories_Detail"
+}

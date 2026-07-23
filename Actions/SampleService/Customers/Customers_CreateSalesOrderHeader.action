@@ -1,0 +1,30 @@
+{
+    "ParentLink": {
+        "Property": "SalesOrders",
+        "Target": {
+            "EntitySet": "Customers",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/crud_demo_3/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CreatedAt": "#Page:Customers_CreateSalesOrderHeader/#Control:CreatedAt/#Value",
+        "CurrencyCode": "#Page:Customers_CreateSalesOrderHeader/#Control:CurrencyCode/#Value",
+        "CustomerID": "#Page:Customers_CreateSalesOrderHeader/#Control:CustomerID/#SelectedValue",
+        "GrossAmount": "#Page:Customers_CreateSalesOrderHeader/#Control:GrossAmount/#Value",
+        "LifeCycleStatus": "#Page:Customers_CreateSalesOrderHeader/#Control:LifeCycleStatus/#Value",
+        "LifeCycleStatusName": "#Page:Customers_CreateSalesOrderHeader/#Control:LifeCycleStatusName/#Value",
+        "NetAmount": "#Page:Customers_CreateSalesOrderHeader/#Control:NetAmount/#Value",
+        "SalesOrderID": "#Page:Customers_CreateSalesOrderHeader/#Control:SalesOrderID/#Value",
+        "TaxAmount": "#Page:Customers_CreateSalesOrderHeader/#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "SalesOrderHeaders",
+        "Service": "/crud_demo_3/Services/SampleService.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

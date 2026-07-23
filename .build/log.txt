@@ -1,0 +1,2 @@
+Pass:
+Generated bundle file /Users/filip/Documents/crud_demo_3/.build/crud_demo_3/.build/uploadBundle.zip

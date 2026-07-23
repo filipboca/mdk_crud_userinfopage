@@ -1,0 +1,6 @@
+{
+    "OnFailure": "/crud_demo_3/Actions/RequiredFieldsFailureMessage.action",
+    "OnSuccess": "/crud_demo_3/Actions/SampleService/Products/Products_UpdateEntity.action",
+    "RequiredFields": ["Name", "SupplierID"],
+    "_Type": "Action.Type.CheckRequiredFields"
+}

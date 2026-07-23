@@ -1,0 +1,20 @@
+{
+    "PopoverItems": [{
+            "Title": "Open Document",
+            "OnPress": "/crud_demo_3/Actions/SampleService/Products/Products_OpenDocument.action"
+        },
+        {
+            "Title": "Add PurchaseOrderItem",
+            "OnPress": "/crud_demo_3/Actions/SampleService/Products/NavToProducts_CreatePurchaseOrderItem.action"
+        },
+        {
+            "Title": "Add SalesOrderItem",
+            "OnPress": "/crud_demo_3/Actions/SampleService/Products/NavToProducts_CreateSalesOrderItem.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/crud_demo_3/Rules/SampleService/Products/Products_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

@@ -1,0 +1,5 @@
+{
+    "_Type": "Action.Type.OpenDocument",
+    "Path": "/crud_demo_3/Services/SampleService.service/{@odata.readLink}/Picture",
+    "MimeType": "image/jpeg"
+}

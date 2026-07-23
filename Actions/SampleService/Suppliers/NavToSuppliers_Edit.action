@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/crud_demo_3/Pages/SampleService_Suppliers/Suppliers_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

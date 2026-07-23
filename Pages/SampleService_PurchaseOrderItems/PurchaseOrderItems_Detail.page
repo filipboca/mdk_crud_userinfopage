@@ -1,0 +1,107 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "PurchaseOrderItems",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/crud_demo_3/Actions/SampleService/PurchaseOrderItems/NavToPurchaseOrderItems_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/crud_demo_3/Rules/SampleService/PurchaseOrderItems/PurchaseOrderItems_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,PurchaseOrderItem_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{ProductID}",
+						"Subhead": "{CurrencyCode}",
+						"BodyText": "",
+						"Footnote": "{ItemNumber}",
+						"Description": "{GrossAmount}",
+						"StatusText": "{NetAmount}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{PurchaseOrderID}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Currency Code",
+							"Value": "{CurrencyCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Gross Amount",
+							"Value": "{GrossAmount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Item Number",
+							"Value": "{ItemNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Net Amount",
+							"Value": "{NetAmount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Product ID",
+							"Value": "{ProductID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Purchase Order ID",
+							"Value": "{PurchaseOrderID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Quantity",
+							"Value": "{Quantity}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Quantity Unit",
+							"Value": "{QuantityUnit}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Tax Amount",
+							"Value": "{TaxAmount}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PurchaseOrderItems_Detail"
+}
