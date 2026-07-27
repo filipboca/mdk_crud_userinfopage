@@ -1,0 +1,75 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/crud_demo_3/Services/SampleService.service",
+						"EntitySet": "Customers"
+					},
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"Visible": true,
+						"DetailImage": "",
+						"BadgeImage": "res://contact.png",
+						"Headline": "{FirstName}",
+						"Subheadline": "{LastName}",
+						"Description": "{City}",
+						"OnPress": "/crud_demo_3/Actions/NavToCustomers_Detail.action",
+						"ActivityItems": [
+							{
+								"_Name": "SectionContactCell0ActivityItems0",
+								"ActivityType": "Phone",
+								"ActivityValue": "{PhoneNumber}"
+							},
+							{
+								"_Name": "SectionContactCell0ActivityItems1",
+								"ActivityType": "Email",
+								"ActivityValue": "{EmailAddress}"
+							}
+						],
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true
+						}
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"DetailImageIsCircular": true,
+					"UseHeadlineForDetailImage": false,
+					"Search": {
+						"Enabled": true,
+						"BarcodeScanner": true
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_List",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar2",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Customers DIY"
+	}
+}

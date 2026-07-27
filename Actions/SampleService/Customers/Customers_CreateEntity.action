@@ -1,26 +1,12 @@
 {
-    "CreateLinks": [],
-    "OnFailure": "/crud_demo_3/Actions/CreateEntityFailureMessage.action",
-    "OnSuccess": "/crud_demo_3/Actions/CreateEntitySuccessMessage.action",
-    "Properties": {
-        "City": "#Page:Customers_Create/#Control:City/#Value",
-        "Country": "#Page:Customers_Create/#Control:Country/#Value",
-        "CustomerID": "#Page:Customers_Create/#Control:CustomerID/#Value",
-        "DateOfBirth": "#Page:Customers_Create/#Control:DateOfBirth/#Value",
-        "EmailAddress": "#Page:Customers_Create/#Control:EmailAddress/#Value",
-        "FirstName": "#Page:Customers_Create/#Control:FirstName/#Value",
-        "HouseNumber": "#Page:Customers_Create/#Control:HouseNumber/#Value",
-        "LastName": "#Page:Customers_Create/#Control:LastName/#Value",
-        "PhoneNumber": "#Page:Customers_Create/#Control:PhoneNumber/#Value",
-        "PostalCode": "#Page:Customers_Create/#Control:PostalCode/#Value",
-        "Street": "#Page:Customers_Create/#Control:Street/#Value"
-    },
-    "Target": {
-        "EntitySet": "Customers",
-        "Service": "/crud_demo_3/Services/SampleService.service"
-    },
-    "ActionResult": {
-        "_Name": "create"
-    },
-    "_Type": "Action.Type.ODataService.CreateEntity"
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/crud_demo_3/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/crud_demo_3/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "Customers"
+	}
 }

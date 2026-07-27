@@ -41,12 +41,26 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
+							"Image": "sap-icon://account",
 							"ImagePosition": "Leading",
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
 							"OnPress": "/crud_demo_3/Actions/Application/NavToUserInfo.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton11",
+							"Title": "Contact List DIY",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://list",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crud_demo_3/Actions/NavToCustomers_List.action"
 						},
 						{
 							"_Type": "ButtonTable.Type.Button",
