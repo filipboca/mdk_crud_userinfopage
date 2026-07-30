@@ -1,0 +1,6 @@
+{
+	"DestinationName": "Backend",
+	"PathSuffix": "/sap/opu/odata/sap/C_PURCHASEORDER_FS_SRV",
+	"OfflineEnabled": false,
+	"SourceType": "Mobile"
+}

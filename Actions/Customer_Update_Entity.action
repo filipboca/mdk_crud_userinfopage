@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "Customer_Update_Entity"
+	},
+	"OnFailure": "/crud_demo_3/Actions/UpdateCustomerEntityFailureMessage.action",
+	"OnSuccess": "/crud_demo_3/Actions/CloseModalPage_Complete.action",
+	"Target": {
+		"Service": "/crud_demo_3/Services/SampleService.service",
+		"EntitySet": "Customers",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"EmailAddress": "#Control:FCEmail/#Value",
+		"FirstName": "#Control:FCFirstName/#Value",
+		"LastName": "#Control:FCLastName/#Value",
+		"PhoneNumber": "#Control:FCPhoneNumber/#Value"
+	}
+}
